@@ -1,0 +1,77 @@
+import React from 'react'                                  
+import {Card, Header, Rating, Button} from 'semantic-ui-react' 
+import { Link } from 'react-router-dom'   
+
+class favouritesList extends React.Component {
+    state = {
+	favList: ["Avengers EndGame", "The Hobbit", "The Nun", "Fifty Shades of Grey"],
+	favouritesList: [],
+	 posts: [
+	{
+        date: '4 days ago',
+        meta: <Rating defaultRating={3} maxRating={5} disabled /> ,
+        header: 'The Avengers',
+        image: 'https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+      },
+      {
+        date: '2 weeks ago',
+        meta: <Rating defaultRating={4} maxRating={5} disabled /> ,
+        header: 'Guardians of the Galaxy',
+        image: 'https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg',
+      },
+
+    ]
+     }
+
+
+  render() {
+
+	 return (
+		<div>
+		 <Header as="h1" style={headerStyle}>
+		My MovieBook
+		 <Button.Group floated="right">
+                <Link to={'./'}> 
+                  <Button>Log out</Button>
+                </Link>
+                <Link to={'./profile'}> 
+                  <Button>Profile</Button>
+                </Link>
+              </Button.Group>
+		</Header>
+		 <Card.Group style = {cardStyle} items={this.state.posts} />
+		 {this.state.favouritesList.map(
+		 movie=>(
+	         <Card>
+		 <Card.Content>
+		 <Card.Header>{movie}</Card.Header>            
+		 <Card.Description>
+
+		</Card.Description>
+	
+		</Card.Content>
+		</Card>)
+		
+		)
+	     }  
+	   </div>
+	 );
+      }
+      
+ 
+ }
+const cardStyle = {
+  margin: '10px',
+  position: 'relative',
+  size: 'large',
+  left: '20%',
+  /*width: '45%',*/
+}
+const headerStyle = {
+  color: '#00887a', 
+  textAlign: 'center',
+  lineHeight: 2,
+  fontSize: '50px',
+  background: '#ececec',
+}
+export default favouritesList;
