@@ -39,25 +39,24 @@ class favouritesList extends React.Component {
                 </Link>
               </Button.Group>
 		</Header>
-		 <Card.Group style = {cardStyle} items={this.state.posts} />
-		 {this.state.favouritesList.map(
-		 movie=>(
+		  <Card.Group style = {cardStyle} items={this.state.posts} />
+		  {this.state.favouritesList.map(
+		  movie=>(
 	         <Card>
-		 <Card.Content>
-		 <Card.Header>{movie}</Card.Header>            
-		 <Card.Description>
+              <Card.Content>
+              <Card.Header>{movie}</Card.Header>            
+              <Card.Description>
 
-		</Card.Description>
-	
-		</Card.Content>
-		</Card>)
+              </Card.Description>
+            
+              </Card.Content>
+	        	</Card>)
 		
-		)
-	     }  
-	   </div>
+		  )
+	    }  
+	  </div>
 	 );
-      }
-      
+      }     
  
  }
 const cardStyle = {

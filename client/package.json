@@ -21,7 +21,7 @@
     "react-document-title": "^2.0.3",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^3.4.1",
     "react-stormpath": "^2.0.1",
     "react-user-profile": "^1.0.3",
     "semantic-ui-css": "^2.4.1",

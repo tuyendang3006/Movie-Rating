@@ -9,7 +9,7 @@ import Home from './Views/Home';
 import Admin from './Views/Admin';
 import Register from './Views/Register';
 // import FriendProfile from './FriendProfile';
-import favouritesList from './Components/favouritesList';
+import favouritesList from './components/favouritesList';
 
 class App extends Component {
 

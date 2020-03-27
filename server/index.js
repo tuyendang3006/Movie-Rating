@@ -80,6 +80,7 @@ app.delete('/users/:id', (req, res) => {
 		res.status(500).send() 
 	})
 })
+
 //Get all Posts 
 app.get('/users/:id/posts', getUser, async (req, res) =>{
     res.json(res.user.userPosts)
@@ -167,7 +168,7 @@ async function getUser(req, res, next) {
     next()
 }
 
-/*** Session handling **************************************/
+// Session handling
 // Create a session cookie
 app.use(session({
     secret: 'oursecret',
@@ -237,7 +238,7 @@ app.get('/users/check-session', (req, res) => {
 })
 
 
-/*** Webpage routes below **********************************/
+// Webpage routes below 
 // Serve the build
 app.use(express.static(__dirname + '/client/build'));
 
@@ -246,7 +247,7 @@ app.get("*", (req, res) => {
     res.sendFile(__dirname + '/client/build/index.html');
 })
 
-/*************************************************/
+
 // Express server listening...
 const port = process.env.PORT || 8000
 app.listen(port, () => {

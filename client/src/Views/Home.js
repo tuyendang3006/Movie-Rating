@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {Feed, Rating, Button} from 'semantic-ui-react'
 // import components
-import Post from '../Components/Post'
+import Post from '../components/Post'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { addPost } from '../Actions/post'
 import AppBar from 'material-ui/AppBar'

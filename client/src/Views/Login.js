@@ -36,7 +36,6 @@ class Login extends React.Component {
 }
 
   
-  
 
   checkCreds = async (e) => {
     e.preventDefault();

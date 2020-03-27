@@ -1,6 +1,6 @@
 export const addPost = async (movie, link, rating) => {
     // the URL for the request
-    const url = "http://localhost:3002/users/5de71115686291134c6fa346/posts";
+    const url = "http://localhost:3001/users/d71aa007e47950b642ad40c625540b65/posts";
 
     // The data we are going to send in our request
     const newPost = {
