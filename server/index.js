@@ -16,7 +16,7 @@ const session = require('express-session')
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Connect Database
-mongoose.connect("mongodb://localhost", {userNewUrlParser: true})
+mongoose.connect("mongodb://localhost:27017/movie", {useNewUrlParser: true, useUnifiedTopology: true})
 const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open', () => console.error("Database connected"))

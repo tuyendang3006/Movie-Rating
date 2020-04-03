@@ -7,7 +7,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { addPost } from '../Actions/post'
 import AppBar from 'material-ui/AppBar'
 import axios from "axios"
-
+//import { addComment } from '../Actions/comment'
 
 class Home extends React.Component {
 
@@ -44,7 +44,7 @@ class Home extends React.Component {
       },
     ],
 
-    // username: `${this.props.location.state.username}`
+    //username: `${this.props.location.state.username}`
     username: "User"
   }
 
@@ -98,6 +98,11 @@ class Home extends React.Component {
     await addPost(this.state.movieTitle, this.state.userRating)
     
   }
+
+  // add comment
+  //addNewComment = function Comment(props) {
+  //  
+  //}
 
 
   handleInputChange = (event) => {

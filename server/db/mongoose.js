@@ -5,8 +5,8 @@
 
    /* Connnect to our database */
    // Get the URI of the local database, or the one specified on deployment.
-   //const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/'
-   const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://tuyen12345:tuyen_12345@cluster0-hiey4.mongodb.net/Movie?retryWrites=true&w=majority'
+   const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/movie'
+   //const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://tuyen12345:tuyen_12345@cluster0-hiey4.mongodb.net/Movie?retryWrites=true&w=majority'
    
    mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true}); 
    

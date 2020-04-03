@@ -46,20 +46,12 @@ class Profile extends React.Component {
                 <h1>User</h1>
                 <h3>Friends</h3>
                 <Avatar style={useStyles.friends} src="../../Assets/tim.png"/>
-                  <Link to={'./friendprofile'}> 
-                    <Button color = 'white' style={{marginRight: "5px"}}>Tim</Button>
-                  </Link>
                 <Avatar style={useStyles.friends} src="../../Assets/johnson.jpg"/>
-                  <Link to={'./friendprofile'}> 
-                    <Button color = 'white' style={{marginRight: "5px"}}>Johnson</Button>
-                  </Link>
-                <Avatar style={useStyles.friends} src="../../Assets/jim.jpg"/>    
-                  <Link to={'./friendprofile'}> 
-                    <Button color = 'white' style={{marginRight: "5px"}}>Jim</Button>
-                  </Link>        
-              </div>
+                <Avatar style={useStyles.friends} src="../../Assets/jim.jpg"/>
 
-               <Link to={'./'}> 
+               
+              </div>
+              <Link to={'./'}> 
                   <Button color = 'red'>Log out</Button>
                 </Link>
                 <Link to={'./home'}> 
@@ -85,18 +77,18 @@ class Profile extends React.Component {
                 <br/>
                 <div>
                   <Feed style = {useStyles.feedStyle} events={this.state.watchlater} />
-           	    </div>
-                <h3>Favourites List</h3>
+           	</div>
+             <h3>Favourites List</h3>
                 <Divider orientation="horizontal"/>
                 <br/>
                 <div>
                   <Feed style = {useStyles.feedStyle} events={this.state.favourites} />
-           	    </div>
-	    	      </div>
-	          </Grid>	  
-        </Grid>
-        </Container>
-      </div>
+           	</div>
+	    	</div>
+	    </Grid>	  
+          </Grid>
+          </Container>
+        </div>
     );
   }
 }

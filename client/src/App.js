@@ -8,7 +8,7 @@ import Profile from './Views/Profile';
 import Home from './Views/Home';
 import Admin from './Views/Admin';
 import Register from './Views/Register';
-// import FriendProfile from './FriendProfile';
+import FriendProfile from './Views/FriendProfile';
 import favouritesList from './components/favouritesList';
 
 class App extends Component {
@@ -29,8 +29,8 @@ class App extends Component {
           <Route exact path='/admin' component={Admin}/>
           <Route exact path='/favouritesList' component={favouritesList}/>
 	        <Route exact path='/register' component={Register}/>
-          {/* <Route exact path='/friendprofile' component={FriendProfile}/>
-            <Route exact path='/favouriteslist' component={FavouritesList}/> */}
+          <Route exact path='/friendprofile' component={FriendProfile}/>
+            {/* <Route exact path='/favouriteslist' component={FavouritesList}/>  */}
         </Switch>
       </BrowserRouter>
       </div>
