@@ -22,6 +22,10 @@ class Post extends React.Component {
                       onChange={this.props.handleChange} 
                       type="text" 
                       placeholder="Movie Title" />
+              {/* <TextField name="comment"
+                      
+                      type="text" 
+                      placeholder="Comment" /> */}
             </Card.Description>
             <p style={{marginLeft: "5%", lineHeight: 3}}> Rating: <Rating icon='star' defaultRating={0} maxRating={5} onRate={this.props.handleRate}/>
             <Button primary floated="right" onClick={this.props.addNewPost}>Post</Button>

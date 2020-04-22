@@ -7,16 +7,15 @@ import React from 'react'
 class recentlyWatched extends React.Component {
     state = {
        // Requires server call
-        moviesWatched: ["Avengers EndGame", "The Hobbit", "The Nun", "Fifty Shades of Grey"],
+        moviesWatched: ["Avengers EndGame", "The Hobbit", "The Nun", "Fifty Shades of Grey", "1917"],
     }
     
      render(){
-   return (
-   <div>      
-       {this.moviesWatched.list.map(movie => (<li id={movie}>{movie}</li>))}
-   </div>
-   );
-
+        return (
+        <div>      
+            {this.moviesWatched.list.map(movie => (<li id={movie}>{movie}</li>))}
+        </div>
+        );
     }
 
 }

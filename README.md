@@ -40,3 +40,6 @@ React
 
 ###
 NodeJS
+
+### Deploy
+https://amu-movie-rating.herokuapp.com/
